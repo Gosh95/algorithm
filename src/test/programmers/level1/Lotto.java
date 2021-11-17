@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Lotto {
+public class LottoMinAndMax{
     public static void main(String[] args) {
         int[] lottos = {44, 1, 0, 0, 31, 25};
         int[] win_nums = {31, 10, 45, 1, 6, 19};
