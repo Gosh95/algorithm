@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LottoMinAndMax{
+public class LottoMinAndMax {
     public static void main(String[] args) {
         int[] lottos = {44, 1, 0, 0, 31, 25};
         int[] win_nums = {31, 10, 45, 1, 6, 19};
 
-        int[] answer = Lotto.solution(lottos, win_nums);
+        int[] answer = LottoMinAndMax.solution(lottos, win_nums);
 
         System.out.println(Arrays.toString(answer)); //3, 5
     }
