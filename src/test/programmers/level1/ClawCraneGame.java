@@ -30,9 +30,9 @@ public class ClawCraneGame {
                         answer += 2;
                     } else {
                         stack.push(doll); //같지 않으면 추가
+                        board[row][column] = 0; //추가 후 뽑힌 인형 좌표 0으로 초기화
                     }
 
-                    board[row][column] = 0; //위의 if 문 돌고 뽑힌 인형 좌표 0으로 초기화
                     break;
                 }
             }
