@@ -17,22 +17,22 @@ public class ClawCraneGame {
         Stack<Integer> stack = new Stack<>();
         stack.push(0);
 
-        for(int move : moves) {
-            int column = move - 1;
+        for(int move : moves) { //column
+            int column = move - 1; //0 부터 시작
 
-            for(int i = 0; i < board.length; i++) {
+            for(int i = 0; i < board.length; i++) { //row
                 int row = i;
-                int doll = board[row][column];
+                int doll = board[row][column]; //2차 배열 변수
 
-                if(doll != 0) {
-                    if(stack.peek() == doll) {
+                if(doll != 0) { //0이 아니면
+                    if(stack.peek() == doll) { //스택의 마지막 숫자와 인형의 숫자가 같으면 제거 후 answer + 2
                         stack.pop();
                         answer += 2;
                     } else {
-                        stack.push(doll);
+                        stack.push(doll); //같지 않으면 추가
                     }
 
-                    board[row][column] = 0;
+                    board[row][column] = 0; //위의 if 문 돌고 뽑힌 인형 좌표 0으로 초기화
                     break;
                 }
             }
