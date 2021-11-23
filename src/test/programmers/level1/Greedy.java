@@ -10,7 +10,7 @@ public class Greedy {
     static int solution(int n, int[] lost, int[] reserve) {
         int answer = n; //전체 학생 수
 
-        int[] student = new int[n];
+        int[] student = new int[n]; //전체 학생 배열
 
         for(int i : lost) student[i - 1]--; //잃어버린 학생 -1
         for(int i : reserve) student[i - 1]++; //여벌가진 학생 + 1
