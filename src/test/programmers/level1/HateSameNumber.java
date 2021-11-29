@@ -16,7 +16,7 @@ public class HateSameNumber {
 
         ArrayList<Integer> list = new ArrayList<>();
 
-        int temp = 10;
+        int temp = 10; //key Point
 
         for(int num : arr) {
             if(temp != num) {
