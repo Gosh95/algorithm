@@ -3,7 +3,10 @@ package test.programmers.level1;
 import java.util.stream.Stream;
 
 public class SumBetweenTwoIntegers {
-    long solution(int a, int b) {
+    public static void main(String[] args) {
+
+    }
+    static long solution(int a, int b) {
         long answer = 0;
 
         if(a > b) {
