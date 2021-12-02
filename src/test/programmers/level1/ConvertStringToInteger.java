@@ -9,7 +9,7 @@ public class ConvertStringToInteger {
         int answer = 0;
 
         answer = Integer.parseInt(s);
-        
+
 /*
         알고리즘
         boolean sign = true;
