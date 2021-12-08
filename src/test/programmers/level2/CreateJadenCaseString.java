@@ -15,7 +15,7 @@ public class CreateJadenCaseString {
             if(idx == 0) {
                 sb.append(str[i].toUpperCase());
             } else {
-                sb.append(str[i].toLowerCase());
+                sb.append(str[i]);
             }
             idx++;
 
@@ -23,6 +23,19 @@ public class CreateJadenCaseString {
                 idx = 0;
             }
         }
+
+/*      enhanced For
+
+        for(String i : str) {
+            if(idx == 0) {
+                sb.append(i.toUpperCase());
+            } else {
+                sb.append(i);
+            }
+            idx++;
+
+            if(i.equals(" ")) idx = 0;
+        }*/
 
         answer = sb.toString();
 
