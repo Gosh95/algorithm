@@ -1,4 +1,4 @@
-package test.baekjoon.thisiscodingtest.greedy;
+package test.thisiscodingtest.greedy;
 
 import java.io.*;
 

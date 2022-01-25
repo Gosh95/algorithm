@@ -1,6 +1,4 @@
-package test.baekjoon.thisiscodingtest.greedy;
-
-import com.sun.security.jgss.GSSUtil;
+package test.thisiscodingtest.greedy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
