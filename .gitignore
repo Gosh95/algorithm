@@ -25,3 +25,4 @@ hs_err_pid*
 .idea/
 untitled104.iml
 venv/*
+out/*
