@@ -1,4 +1,4 @@
-package test.baekjoon.for문;
+package test.baekjoon.java.for문;
 
 import java.io.BufferedReader;
 import java.io.IOException;
