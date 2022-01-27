@@ -1,4 +1,4 @@
-package test.thisiscodingtest.implementation;
+package test.thisiscodingtest.java.implementation;
 
 import java.io.BufferedReader;
 import java.io.IOException;
