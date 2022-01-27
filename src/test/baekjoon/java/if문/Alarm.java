@@ -1,4 +1,4 @@
-package test.baekjoon.if문;
+package test.baekjoon.java.if문;
 
 import java.util.Scanner;
 
