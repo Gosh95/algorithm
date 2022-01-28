@@ -1,34 +1,32 @@
-class Unit:
-    def __init__(self, name, hp):
-        self.name = name
-        self.hp = hp
+class SoldOutError(Exception):
+    def __init__(self, message):
+        Exception.__init__(self)
+        self.message = message
 
-class AttackUnit(Unit):
-    def __init__(self, name, hp, damage):
-        Unit.__init__(self, name, hp)
-        self.damage = damage
+    def __str__(self):
+        return self.message
 
-    def attack(self, location):
-        print(f"{self.name} : {location} 방향으로 적군을 공격 합니다. [공격력 : {self.damage}]")
+chicken = 10
+waiting = 1
 
-    def damaged(self, damage):
-        self.hp -= damage
-        print(f"{self.name} : {damage} 데미지를 입었습니다. [현재 체력 : {self.hp}]")
+while True:
+    try:
+        print(f"남은 치킨 개수: {chicken}")
+        num = int(input())
+        if num < 1 or type(num) != int:
+            raise ValueError
+        elif num > chicken:
+            raise SoldOutError(f"죄송합니다. 현재 남아있는 치킨은 {chicken} 마리 입니다.")
 
-        if self.hp <= 0:
-            print(f"{self.name} : 파괴되었습니다.")
+        print(f"[대기번호 {waiting}] {num} 마리 주문이 완료되었습니다.")
+        chicken -= num
+        waiting += 1
 
-class Flyable:
-    def __init__(self, flying_speed):
-        self.flying_speed = flying_speed
+        if chicken == 0:
+            print("재고가 소진되어 더 이상 주문을 받지 않습니다.")
+            break
+    except ValueError:
+        print("잘못된 값을 입력하였습니다.")
+    except SoldOutError as err:
+        print(err)
 
-    def fly(self, name, location):
-        print(f"{name} : {location} 방향으로 날아갑니다. [속도 {self.flying_speed}]")
-
-class FlyableAttackUnit(AttackUnit, Flyable):
-    def __init__(self, name, hp, damage, flying_speed):
-        AttackUnit.__init__(self, name, hp, damage)
-        Flyable.__init__(self, flying_speed)
-
-valkyrie = FlyableAttackUnit("발키리", 200, 6, 5)
-valkyrie.fly(valkyrie.name, "3시")
