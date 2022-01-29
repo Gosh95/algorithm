@@ -8,4 +8,4 @@ def solution(s):
             else:
                 char[j] = char[j].lower()
         a[i] = "".join(char)
-    return " ".join(a)
+    return " ".join(a) 
