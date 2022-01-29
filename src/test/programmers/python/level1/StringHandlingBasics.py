@@ -8,3 +8,4 @@ def solution(s):
         return False
 
     return True
+
