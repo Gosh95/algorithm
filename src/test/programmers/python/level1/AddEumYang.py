@@ -1,10 +1,8 @@
-def solution(a, b):
-    answer = 0
-    for i, j in zip(a, b):
-        answer += (i * j)
-    return answer
-
 # def solution(absolutes, signs):
-#     return sum(absolute if sign else -absolute for absolute, sign in zip(absolutes, signs))
+#     for i in range(len(signs)):
+#         if signs[i] == False:
+#             absolutes[i] *= -1
+#     return sum(absolutes)
 
-# print(solution([4,7,12], [True,False,True]))
+def solution(absolutes, signs):
+    return sum([absolute if sign else -absolute for absolute, sign in zip(absolutes, signs)])
