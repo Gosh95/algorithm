@@ -11,17 +11,17 @@ public class Blackjack {
         int N = Integer.parseInt(input[0]);
         int M = Integer.parseInt(input[1]);
 
-        int[] num = new int[N];
+        int[] cards = new int[N];
         String[] inputNums = br.readLine().split(" ");
         for(int i = 0; i < N; i++) {
-            num[i] = Integer.parseInt(inputNums[i]);
+            cards[i] = Integer.parseInt(inputNums[i]);
         }
 
         int answer = 0;
         first:for(int i = 0; i < N - 2; i++) {
             for(int j = i + 1; j < N - 1; j++) {
                 for(int k = j + 1; k < N; k++) {
-                    int sum = num[i] + num[j] + num[k];
+                    int sum = cards[i] + cards[j] + cards[k];
                     if(sum > M) continue;
                     if(sum == M) {
                         answer = sum;
