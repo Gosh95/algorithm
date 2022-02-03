@@ -10,3 +10,4 @@
 ##### - 2022-01-27 ~ 파이썬 기초 문제 100개 풀이 끝 & 부족한 파이썬 문법 좀 더 공부
 #
 ### 백준 : 단계별로 풀어보기 진행중
+[![Solved.ac.tier](http://mazassumnida.wtf/api/v2/generate_badge?boj={goshk1995})](https://solved.ac/{goshk1995})
