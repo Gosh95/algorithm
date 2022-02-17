@@ -36,8 +36,6 @@ public class HouseNumbering {
             }
         }
 
-
-
         StringBuilder sb = new StringBuilder();
         sb.append(count).append("\n");
         while(!queue.isEmpty()) {
@@ -46,7 +44,6 @@ public class HouseNumbering {
 
         System.out.println(sb);
     }
-
 
     static void dfs(int x, int y) {
         visited[x][y] = true;
