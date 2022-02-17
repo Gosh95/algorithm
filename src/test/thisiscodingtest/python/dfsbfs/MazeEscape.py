@@ -18,7 +18,7 @@ def bfs(x, y):
             nx = x + dx[j]
             ny = y + dy[j]
 
-            if nx < 0 or nx >= N or ny < 0 ny >= M:
+            if nx < 0 or nx >= N or ny < 0 or ny >= M:
                 continue
             if maze[nx][ny] == 0:
                 continue
