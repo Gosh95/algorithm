@@ -36,10 +36,9 @@ public class MazeExploration {
             }
         }
 
-
-
         System.out.println(bfs(0, 0));
     }
+
     static private int bfs(int x, int y) {
         Queue<Node> queue = new LinkedList<>();
         queue.offer(new Node(x, y));
