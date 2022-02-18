@@ -39,13 +39,6 @@ public class MazeExploration {
 
 
         System.out.println(bfs(0, 0));
-
-        for(int i = 0; i < N; i++) {
-            for(int j = 0; j < M; j++) {
-                System.out.print(graph[i][j] + " ");
-            }
-            System.out.println();
-        }
     }
     static private int bfs(int x, int y) {
         Queue<Node> queue = new LinkedList<>();
