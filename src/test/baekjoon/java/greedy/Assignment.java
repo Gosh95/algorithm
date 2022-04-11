@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
-import java.util.Deque;
 
 public class Assignment {
     public static void main(String[] args) throws IOException {
